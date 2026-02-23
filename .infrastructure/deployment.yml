@@ -21,6 +21,9 @@ spec:
       containers:
         - name: todoapp
           image: ikulyk404/todoapp:3.0.0
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
           ports:
             - containerPort: 8080
           resources:
